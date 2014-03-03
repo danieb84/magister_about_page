@@ -1,0 +1,68 @@
+<!--"About Page" code for the Magister Mobile Application-->
+
+<div data-role="page" id="about"><!--Tizen data-role-->
+    <div class="container2 about" id="about-page">
+        <header>
+            <div class="form-options flex">
+                <span class="main-back show"></span>
+                <span class="page-title show"><span class="inner-text">About</span></span>
+            </div>
+        </header>
+        <!--Main display of About Page-->
+        <div class="content group about-page">
+            <div id="about-us">
+                <p class="description">
+                    Magister is an app designed for the teacher on go. It provides a convenient way for teachers to start their lesson planning when they don't have access to a computer or pen & paper.
+                    It also features a built-in calendar for teachers to manage their class schedules.
+                </p>
+                <br>
+                <p class="created-by">Created by <span>i</span><span>r</span><span>i</span><span>e</span> <span>code</span></p>
+                <div class="authors">
+                    <p>Authors:</p>
+                    <p>Barrington Henry<br>
+                        Danielle Matthews</p>
+                </div>
+                <p class="invite">
+                    Feel free to visit our website, contact us, or like us Facebook page using the links below.
+                </p>
+                <div class="contact group">
+                    <a href="http://iriecode.com/" target="_blank"><p class="icon web"></p></a>
+                    <a href="" target="_blank" class="email-button"><p class="icon email"></p></a><!--button used to activate contact form-->
+                    <a href="https://www.facebook.com/dcahdesigns" target="_blank"><p class="icon facebook"></p></a>
+                </div>
+                <p class="copy-right">&#x000A9 2013 Magister. All Rights Reserved.</p>
+            </div>
+        </div>
+
+        <!--Overlay to cover main display when the contact form is activated-->
+        <div class="overlay"></div>
+
+        <!--"Message submitted" confirmation for contact form-->
+        <div class="confirm-submit">
+            <span class="cancel"></span>
+            <p>message submitted!</p>
+        </div>
+
+        <!--Contact form to lay on top of main display when activated-->
+        <div class="contact-form">
+            <form>
+                <p>Send us an email using the contact form below:</p>
+                <div class="control-group">
+                    <label class="control-label" for="subject">Subject of message</label>
+                    <div class="controls">
+                        <input name="subject" type="text" id="subject" class="ui-input-text ui-body-s">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="message">Message</label>
+                    <div class="controls" data-scroll="y">
+                        <textarea id="message" rows="8" required></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--/contact form-->
+    </div>
+    <script src="jquery-1.8.2.js" type="text/javascript"></script>
+    <script src="myScript.js" type="text/javascript"></script>
+</div>
